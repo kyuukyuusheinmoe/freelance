@@ -1,0 +1,39 @@
+#registerContainer1, #registerContainer2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 400px;
+    height: 460px;
+    border: 1px solid #F8F5F5;
+    border-radius: 3px;
+}
+
+input, textarea, .gender-select {
+    padding: 10px;
+    margin-top: 10px !important;
+    width: 350px;
+}
+
+select, textarea {
+    border-radius: 7px;
+}
+
+.dob-row {
+    padding: 10px;
+    margin-top: 10px !important;
+}
+
+.day-row {
+    padding-left: 28px !important;
+}
+
+.mm-row {
+    padding-left: 12px !important;
+}
+
+.freeRegText {
+    padding: 10px 25px 0px 25px;
+}
+
+.firstButtonRow {
+    margin-top: 10px !important;
+}

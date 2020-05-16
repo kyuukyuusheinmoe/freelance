@@ -1,0 +1,24 @@
+#navigation {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+}
+button {
+    position: absolute;
+    background-color: #9B23D3; /* Green */
+    border: solid;
+    border-radius: 5px !important;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+input {
+    background: #FFFFFF;
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+

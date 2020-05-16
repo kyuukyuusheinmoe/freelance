@@ -1,0 +1,47 @@
+.posts {
+    position: relative;
+    width: 550px;
+    height: 190px;
+    box-sizing: border-box;
+    border: 0.5px solid #F8F5F5;
+    border-radius: 7px;
+    background-color: #ffffff;
+    left: 20%;
+    box-shadow: 0 0px 4px 0px rgba(0,0,0,0.3);
+    margin-top: 15px;
+}
+
+.profile-picture {
+    height: 130px;
+    padding: 10px 0px 0px 10px;
+    border-radius: 10%;
+}
+
+.freelance-name {
+    padding: 5px 0px 0px 10px;
+}
+
+.description-text {
+    text-align: justify;
+}
+
+.description-col {
+    padding: 10px 20px 0px 0px !important;
+}
+
+button {
+    position: absolute;
+    background-color: #9B23D3; /* Green */
+    border: solid;
+    border-radius: 5px !important;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.hire-col {
+    padding-left: 30px !important;
+}
