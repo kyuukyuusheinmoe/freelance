@@ -24,6 +24,7 @@ const handleSubmit = event => {
         },
         "gender": dataForm.get('gender'),
         "qualification": dataForm.get('qualification'),
+        "skills" : dataForm.get('skill'),
         "description": dataForm.get('description')
     }
     fetch("http://localhost:3000/books", {
@@ -83,7 +84,7 @@ const ShowSearchResults = ({ searchSkill }) => {
 }
 
 const RegisterPostAll = () => {
-    const []
+    const [skill, setSkill] = React.useState("");
     return (
         <div className="GoToNext">
             <Container>
@@ -168,8 +169,17 @@ const RegisterPostAll = () => {
                                     </Col>
                                 </Row>
                                 <Row>
+                                    <Col xs={12}>
+                                        <input id="skill" name="skill"
+                                            type="text" placeholder="Skills"
+                                            onChange = {event => setSkill(event.target.value)}
+                                            />
+
+                                    </Col>
+                                </Row>
+                                <Row>
                                     <Col>
-                                        <ShowSearchResults searchSkill={""} />
+                                        <ShowSearchResults searchSkill={skill} />
                                     </Col>
                                 </Row>
                                 <Row>
