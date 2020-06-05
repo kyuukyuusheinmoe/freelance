@@ -36,15 +36,30 @@ function ShowPosts() {
                             <img src={Aye_Chan_Moe} alt="Profile Picture" className="profile-picture" />
                         </Col>
                         <Col className="description-col">
+                            <h4 className='about-me'> ABOUT ME</h4>
                             <p className="description-text">{book.description}</p>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={6}>
-                            <h5 className="freelance-name"> {book.name}</h5>
+                        <Col xs={3}> </Col>
+                        <Col className="skills-row">
+                            <span className='skills-text'> Skills :</span>
+                            {(book.skills) ? (book.skills.map(skill => (skill.id > 0) ?
+                                <span className="show-post-skill" key={skill.id}> {skill.name}
+                                </span>
+                                : null)) : null}
                         </Col>
-                        <Col></Col>
-                        <Col xs={3} className="hire-col">
+                    </Row>
+
+                    <Row className="name-skill-row">
+                        <span className="freelance-name"> {book.name}</span>
+                    </Row>
+
+                    <Row>
+                        <Col xs={3} className="freelance-profile">
+                            <a> View Profile</a>
+                        </Col>
+                        <Col>
                             <button className="hireBtn" value="hire"> Hire </button>
                         </Col>
                     </Row>
