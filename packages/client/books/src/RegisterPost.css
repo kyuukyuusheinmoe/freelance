@@ -2,13 +2,13 @@
     box-sizing: border-box;
     position: absolute;
     width: 400px;
-    height: 460px;
+    height: 535px;
     border: 1px solid #F8F5F5;
     border-radius: 3px;
 }
 
 input, textarea, .gender-select {
-    padding: 10px;
+    padding: 4px;
     margin-top: 10px !important;
     width: 350px;
 }
@@ -18,8 +18,16 @@ select, textarea {
 }
 
 .dob-row {
-    padding: 10px;
+    padding: 4px;
     margin-top: 10px !important;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 20px !important;
+    padding: 0px 2px 1px;       
 }
 
 .day-row {
@@ -32,6 +40,44 @@ select, textarea {
 
 .freeRegText {
     padding: 10px 25px 0px 25px;
+}
+
+.skill-list {
+    list-style-type:none;
+    padding-inline-end: 18px !important;
+    padding-inline-start: 0px !important
+}
+
+.show-skill {
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    padding: 0px 0px 3px 5px !important;
+    height: 2%;
+    margin: 5px;
+}
+
+.close-tag {
+    cursor: pointer;
+    padding: 0px 4px 3px 5px;;
+    box-sizing: border-box;
+    color: white !important;
+    font-weight: 600;
+}
+
+.skill-input {
+    padding-left: 0px !important;
+    padding-bottom: 5px !important;
+    margin-top: 2px !important;
+    border: none;
+    width: 200px !important;
+}
+
+.skill-item {
+    padding : 10px;
+    background-color: #F8F5F5;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .firstButtonRow {
